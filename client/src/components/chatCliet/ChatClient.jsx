@@ -39,8 +39,9 @@ const ChatClient = () => {
         placeholder="username"
         type="text"
       />
-      <div>
-        {listMessages.map((message, idx) => (
+      <div> 
+ 
+        { listMessages.length > 0 && listMessages.map((message, idx) => (
           <p key={message + idx}>
             {" "}
             {message.user}:{message.body}
