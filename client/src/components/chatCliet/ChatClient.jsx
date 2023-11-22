@@ -22,9 +22,10 @@ const ChatClient = () => {
       body: message,
       user: username,
     };
-    setListMessages([...listMessages, newMsg]);
+    setListMessages((prevList) => [...prevList, newMsg]);
     setMessage("");
   };
+
   useEffect(()=>{
     const reciveMessage = msg=>{
         setListMessages(...listMessages, msg)
