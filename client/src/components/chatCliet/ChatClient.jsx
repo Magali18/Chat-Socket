@@ -41,6 +41,7 @@ const ChatClient = () => {
         type="text"
       />
       <div> 
+
  
         { listMessages.length > 0 && listMessages.map((message, idx) => (
           <p key={message + idx}>
@@ -49,7 +50,6 @@ const ChatClient = () => {
           </p>
         ))}
         <form onSubmit={handleSubmit}>
-          <span> Chat-io</span>
           <p> Type your menssage.</p>
           <div>
            
